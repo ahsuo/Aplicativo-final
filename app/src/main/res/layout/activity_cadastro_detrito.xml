@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroDetrito">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Detritos"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <EditText
+        android:id="@+id/editTextNomePessoa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+        app:layout_constraintVertical_bias="0.015"
+        app:layout_constraintWidth_default="spread" />
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Data dd/mm/aa"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNomePessoa"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="spread" />
+
+    <EditText
+        android:id="@+id/editTextEndereco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Endereço"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextData"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="spread" />
+
+    <EditText
+        android:id="@+id/editTextTipoDetrito"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Tipo de Detrito"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextEndereco"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="spread" />
+
+    <EditText
+        android:id="@+id/editTextTelefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTipoDetrito"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="spread" />
+
+    <Button
+        android:id="@+id/buttonCapturarLocalizacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Capturar Localização"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/editTextTelefone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_default="spread" />
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="276dp"
+        android:backgroundTint="#ECD458"
+        android:text="Salvar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCapturarLocalizacao"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="spread" />
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F12A47"
+        android:text="Voltar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSalvar"
+        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintWidth_default="spread" />
+</androidx.constraintlayout.widget.ConstraintLayout>
